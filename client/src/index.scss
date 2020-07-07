@@ -1,0 +1,64 @@
+@import "./styles/vars";
+html,
+body,
+#root,
+.container {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Roboto Slab", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
+  margin: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 0 2.5%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.nav-bar {
+  ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      box-sizing: border-box;
+      padding: 8px 16px;
+      a,
+      i {
+        text-decoration: none;
+        color: $font-light;
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0.03rem;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.dark-on-white {
+  color: $font-dark;
+}
+
+.space-between {
+  justify-content: space-between;
+}

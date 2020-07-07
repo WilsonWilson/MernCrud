@@ -1,0 +1,184 @@
+@import "./styles/vars";
+
+.brew-row {
+  padding: 1rem 0;
+  position: relative;
+  width: 100%;
+}
+.brew-item {
+  position: relative;
+  a {
+    text-decoration: none;
+    color: inherit;
+    h2 {
+      font-weight: $font-bold;
+      font-size: 1.25rem;
+      line-height: 1.3rem;
+      margin: 0rem 0 0.3rem;
+    }
+    .brew-sub-info {
+      font-weight: $font-thin;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      &.brewery {
+        font-size: 0.75rem;
+        letter-spacing: 0.03rem;
+        font-weight: $font-med;
+      }
+      span {
+        &::after {
+          content: "•";
+          padding: 0 8px;
+        }
+        &:nth-last-child(1)::after {
+          content: "";
+          padding: 0;
+        }
+      }
+    }
+
+    .brew-description {
+      font-weight: $font-thin;
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+      margin: 10px 0 8px;
+      position: relative;
+      width: 100%;
+      p {
+        margin: 0;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        white-space: initial;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .brew-price-containter {
+      font-size: 1.1rem;
+      .dots {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px dotted $font-light;
+        margin: 0px 4px 2px;
+      }
+    }
+  }
+}
+
+.edit-post-section {
+  margin: 12px 0 0;
+  padding-bottom: 6px;
+  .btn,
+  a.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border: none;
+    background-color: $font-light;
+    color: $font-dark;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: $font-med;
+    letter-spacing: 0.05rem;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-family: "Roboto Slab", "Helvetica Neue", sans-serif;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding-bottom: 25px;
+  .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    label {
+      width: 100%;
+      font-size: 0.85rem;
+      display: block;
+      padding-bottom: 0.3rem;
+      color: $font-mid;
+    }
+    input,
+    textarea,
+    .textarea {
+      padding: 0 12px;
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.033);
+      border: none;
+      border-radius: 0;
+      font-size: 16px;
+      border-bottom: #ddd solid 1px;
+      color: $font-dark;
+      height: 2.75rem;
+      font-family: "Roboto Slab", "Helvetica Neue", sans-serif;
+    }
+    textarea,
+    .textarea {
+      min-height: 200px;
+      padding: 0px;
+    }
+    .ql-container {
+      font-size: 16px;
+      font-family: "Roboto Slab", "Helvetica Neue", sans-serif;
+    }
+    select {
+      padding: 0 12px;
+      background-color: rgba(0, 0, 0, 0.033);
+      border: none;
+      border-radius: 0;
+      font-size: 0.8rem;
+      border-bottom: #ddd solid 1px;
+      color: $font-light;
+    }
+    .brewery-location-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-direction: row;
+      input {
+        width: 72%;
+      }
+      select {
+        width: 25%;
+        margin-left: 0.2rem;
+      }
+    }
+  }
+  button {
+    width: 100%;
+    background-color: $font-light;
+    height: 4rem;
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 1.25rem;
+  }
+}
+::placeholder {
+  color: #ccc;
+  font-size: 0.9rem;
+  font-family: "Roboto Slab", "Helvetica Neue", sans-serif;
+  font-weight: $font-med;
+  letter-spacing: 0.03rem;
+}
+:-ms-input-placeholder {
+  color: #ccc;
+  font-size: 0.9rem;
+  font-family: "Roboto Slab", "Helvetica Neue", sans-serif;
+  font-weight: $font-med;
+  letter-spacing: 0.03rem;
+}
+::-ms-input-placeholder {
+  color: #ccc;
+  font-size: 0.9rem;
+  font-family: "Roboto Slab", "Helvetica Neue", sans-serif;
+  font-weight: $font-med;
+  letter-spacing: 0.03rem;
+}

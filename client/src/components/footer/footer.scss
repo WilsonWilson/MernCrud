@@ -1,0 +1,14 @@
+@import "../../styles/vars";
+
+.power-by {
+  margin-top: auto;
+  align-self: center;
+  box-sizing: border-box;
+  padding-bottom: 4px;
+  letter-spacing: 0.025rem;
+  font-weight: $font-thin;
+  span {
+    letter-spacing: 0.075rem;
+    font-weight: $font-med;
+  }
+}

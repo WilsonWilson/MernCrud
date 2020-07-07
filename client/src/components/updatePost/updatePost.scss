@@ -1,0 +1,89 @@
+@import "../../styles/vars";
+
+.update-container {
+  .servin-size-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    .serving-size {
+      width: 72%;
+    }
+    .serving-price {
+      width: 25%;
+      margin-left: 0.2rem;
+    }
+    &.serv-size-hidden {
+      display: none;
+    }
+  }
+  .brew-basics {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    .brew-type {
+      width: 72%;
+    }
+    .brew-abv {
+      width: 25%;
+      margin-left: 0.2rem;
+    }
+  }
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+.nav-bar {
+  ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      box-sizing: border-box;
+      padding: 8px 16px;
+      a {
+        text-decoration: none;
+        color: $font-light;
+        font-size: 0.85rem;
+        font-weight: $font-med;
+        letter-spacing: 0.03rem;
+      }
+    }
+  }
+}
+
+.servin-size-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  .serving-size {
+    width: 72%;
+  }
+  .serving-price {
+    width: 25%;
+    margin-left: 0.2rem;
+  }
+  &.serv-size-hidden {
+    display: none;
+  }
+}
+.brew-basics {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  .brew-type {
+    width: 72%;
+  }
+  .brew-abv {
+    width: 25%;
+    margin-left: 0.2rem;
+  }
+}
