@@ -47,7 +47,7 @@ const App = () => {
   return (
     <div className="container dark-on-white">
       <Nav />
-      <h1>Suds on 77th</h1>
+      <h1>Sammy's Suds on 7th</h1>
       {posts.map((post, i) => (
         <div className="row" key={post._id}>
           <div className="col brew-row">
